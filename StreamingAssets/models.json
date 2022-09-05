@@ -1,0 +1,20 @@
+{
+    "models": [
+        {
+            "name": "convnext_nano-tfjs-channels-last",
+            "path": "/TFJSModels/convnext_nano-tfjs-channels-last/model.json"
+        },
+        {
+            "name": "mobilenetv2_050-opset15-tfjs",
+            "path": "/TFJSModels/mobilenetv2_050-opset15-tfjs/model.json"
+        },
+        {
+            "name": "mobilenetv2_100-opset15-tfjs",
+            "path": "/TFJSModels/mobilenetv2_100-opset15-tfjs/model.json"
+        },
+        {
+            "name": "resnet18-opset15-tfjs",
+            "path": "/TFJSModels/resnet18-opset15-tfjs/model.json"
+        }
+    ]
+}
