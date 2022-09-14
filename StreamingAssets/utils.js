@@ -1,5 +1,5 @@
 
-// 
+// Perform inference with the provided model and input data
 async function PerformInferenceAsync(model, float32Data, shape) {
 
     const outputData = tf.tidy(() => {
@@ -7,8 +7,6 @@ async function PerformInferenceAsync(model, float32Data, shape) {
         // Make a prediction.
         return model.predict(input_tensor);
     });
-    // const output = await outputData.array();
-    // console.log(`Output: ${output}`);
     return await outputData.data();
 }
 
@@ -24,7 +22,7 @@ function softmax(resultArray) {
     });
 }
 
-// 
+// Get the index for the array element with the highest value
 function argMax(array) {
     return array.map((x, i) => [x, i]).reduce((r, a) => (a[0] > r[0] ? a : r))[1];
 }
