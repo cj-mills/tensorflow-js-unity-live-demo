@@ -10,6 +10,7 @@ async function PerformInferenceAsync(model, float32Data, shape) {
     return await outputData.data();
 }
 
+// Source: https://github.com/microsoft/onnxruntime-nextjs-template/blob/60c0254beb2277431e96f15ec6613d781c2ad294/utils/modelHelper.ts#L42
 //The softmax transforms values to be between 0 and 1
 function softmax(resultArray) {
     // Get the largest value in the array.
